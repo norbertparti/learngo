@@ -1,7 +1,17 @@
+// This is a package
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"runtime"
+)
 
+/*
+Main package
+Multiline comment
+*/
 func main() {
-	fmt.Println("Hello World!")
+	hey()
+	fmt.Println(runtime.NumCPU())
+	bye()
 }
