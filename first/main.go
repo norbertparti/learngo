@@ -11,7 +11,12 @@ Main package
 Multiline comment
 */
 func main() {
-	hey()
+	for i := 0; i < 10; i++ {
+		if i%2 == 0 {
+			hey()
+		} else {
+			bye()
+		}
+	}
 	fmt.Println(runtime.NumCPU())
-	bye()
 }
